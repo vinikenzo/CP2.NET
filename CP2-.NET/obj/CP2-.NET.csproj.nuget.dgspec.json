@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kenzo\\Desktop\\-\\Fiap Aulas\\2°Ano\\ADB.Net\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj": {}
+    "C:\\Users\\kenzo\\Desktop\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kenzo\\Desktop\\-\\Fiap Aulas\\2°Ano\\ADB.Net\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj": {
+    "C:\\Users\\kenzo\\Desktop\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kenzo\\Desktop\\-\\Fiap Aulas\\2°Ano\\ADB.Net\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj",
+        "projectUniqueName": "C:\\Users\\kenzo\\Desktop\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj",
         "projectName": "CP2-.NET",
-        "projectPath": "C:\\Users\\kenzo\\Desktop\\-\\Fiap Aulas\\2°Ano\\ADB.Net\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj",
+        "projectPath": "C:\\Users\\kenzo\\Desktop\\CP2-.NET\\CP2-.NET\\CP2-.NET.csproj",
         "packagesPath": "C:\\Users\\kenzo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kenzo\\Desktop\\-\\Fiap Aulas\\2°Ano\\ADB.Net\\CP2-.NET\\CP2-.NET\\obj\\",
+        "outputPath": "C:\\Users\\kenzo\\Desktop\\CP2-.NET\\CP2-.NET\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

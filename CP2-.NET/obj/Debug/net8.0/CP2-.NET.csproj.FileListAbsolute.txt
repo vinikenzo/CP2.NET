@@ -31,3 +31,37 @@ C:\Users\kenzo\Desktop\-\Fiap Aulas\2°Ano\ADB.Net\CP2-.NET\CP2-.NET\obj\Debug\n
 C:\Users\kenzo\Desktop\-\Fiap Aulas\2°Ano\ADB.Net\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.pdb
 C:\Users\kenzo\Desktop\-\Fiap Aulas\2°Ano\ADB.Net\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.genruntimeconfig.cache
 C:\Users\kenzo\Desktop\-\Fiap Aulas\2°Ano\ADB.Net\CP2-.NET\CP2-.NET\obj\Debug\net8.0\ref\CP2-.NET.dll
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\appsettings.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.staticwebassets.endpoints.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.staticwebassets.runtime.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.exe
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.deps.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.runtimeconfig.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.dll
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\bin\Debug\net8.0\CP2-.NET.pdb
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.AssemblyInfoInputs.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.AssemblyInfo.cs
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.csproj.CoreCompileInputs.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.RazorAssemblyInfo.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.RazorAssemblyInfo.cs
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.sourcelink.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\scopedcss\bundle\CP2-.NET.styles.css
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\scopedcss\projectbundle\CP2-.NET.bundle.scp.css
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.dll
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\refint\CP2-.NET.dll
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.pdb
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\CP2-.NET.genruntimeconfig.cache
+C:\Users\kenzo\Desktop\CP2-.NET\CP2-.NET\obj\Debug\net8.0\ref\CP2-.NET.dll
