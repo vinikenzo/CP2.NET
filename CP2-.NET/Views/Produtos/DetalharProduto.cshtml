@@ -1,0 +1,15 @@
+﻿@model CP2_.NET.Models.Produto
+@{
+    var funcionarios = ViewBag.Funcionarios as List<CP2_.NET.Models.Funcionario>;
+    var funcionario = funcionarios?.FirstOrDefault(f => f.IdFuncionario == Model.IdFuncionario);
+}
+
+<h2>Detalhes do Produto</h2>
+
+<p><strong>Nome:</strong> @Model.Nome</p>
+<p><strong>Categoria:</strong> @Model.Categoria</p>
+<p><strong>Quantidade:</strong> @Model.Quantidade</p>
+<p><strong>Data de Cadastro:</strong> @Model.DataCadastro.ToShortDateString()</p>
+<p><strong>Responsável:</strong> @funcionario?.Nome</p>
+
+<a asp-action="ListarProdutos">Voltar</a>

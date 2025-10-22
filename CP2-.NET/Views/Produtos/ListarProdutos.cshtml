@@ -1,0 +1,45 @@
+﻿@model List<CP2_.NET.Models.Produto>
+
+@{
+    var funcionarios = ViewBag.Funcionarios as List<CP2_.NET.Models.Funcionario>;
+}
+
+<h2>Estoque - Lista de Produtos</h2>
+
+<form method="get">
+    <input type="text" name="busca" placeholder="Pesquisar produto..." />
+    <button type="submit">Buscar</button>
+</form>
+
+<p><a asp-action="CadastrarProduto">Cadastrar Novo Produto</a></p>
+
+<table border="1" cellpadding="5" >
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Quantidade</th>
+        <th>Preço (R$)</th>
+        <th>Responsável</th>
+        <th>Data de Cadastro</th>
+        <th>Ações</th>
+    </tr>
+
+    @foreach (var produto in Model)
+    {
+        <tr>
+            <td>@produto.IdProduto</td>
+            <td>@produto.Nome</td>
+            <td>@produto.Categoria</td>
+            <td>@produto.Quantidade</td>
+            <td>@produto.Preco.ToString("F2")</td>
+            <td>@funcionarios.FirstOrDefault(f => f.IdFuncionario == produto.IdFuncionario)?.Nome</td>
+            <td>@produto.DataCadastro.ToString("dd/MM/yyyy")</td>
+            <td>
+                <a asp-action="DetalharProduto" asp-route-id="@produto.IdProduto">Ver</a> |
+                <a asp-action="EditarProduto" asp-route-id="@produto.IdProduto">Editar</a> |
+                <a asp-action="DeletarProduto" asp-route-id="@produto.IdProduto">Excluir</a>
+            </td>
+        </tr>
+    }
+</table>

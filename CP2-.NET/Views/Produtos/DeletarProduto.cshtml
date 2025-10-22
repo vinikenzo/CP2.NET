@@ -1,0 +1,11 @@
+﻿@model CP2_.NET.Models.Produto
+
+<h2>Excluir Produto</h2>
+
+<p>Tem certeza que deseja excluir <strong>@Model.Nome</strong>?</p>
+
+<form asp-action="DeletarProduto">
+    <input type="hidden" asp-for="IdProduto" />
+    <button type="submit">Sim, excluir</button>
+    <a asp-action="ListarProdutos">Cancelar</a>
+</form>

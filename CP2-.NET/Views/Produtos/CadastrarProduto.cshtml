@@ -1,0 +1,26 @@
+﻿@model CP2_.NET.Models.Produto
+
+<h2>Cadastrar Produto</h2>
+
+<form asp-action="CadastrarProduto">
+    <label>Nome:</label>
+    <input asp-for="Nome" /><br />
+
+    <label>Categoria:</label>
+    <input asp-for="Categoria" /><br />
+
+    <label>Quantidade:</label>
+    <input asp-for="Quantidade" type="number" /><br />
+
+    <label>Preço:</label>
+    <input asp-for="Preco" /><br />
+
+    <label>Responsável:</label>
+    <select asp-for="IdFuncionario"
+            asp-items="new SelectList(ViewBag.Funcionarios, nameof(CP2_.NET.Models.Funcionario.IdFuncionario), nameof(CP2_.NET.Models.Funcionario.Nome))">
+    </select><br />
+
+    <button type="submit">Salvar</button>
+</form>
+
+<a asp-action="ListarProdutos">Voltar</a>
