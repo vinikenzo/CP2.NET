@@ -1,11 +1,75 @@
 ﻿@model CP2_.NET.Models.Produto
 
-<h2>Excluir Produto</h2>
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
 
-<p>Tem certeza que deseja excluir <strong>@Model.Nome</strong>?</p>
+<style>
+    .form-container {
+        background-color: #0a0a1a;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #00ffff33;
+        max-width: 500px;
+        margin: 40px auto;
+        color: #e0e0e0;
+        text-align: center;
+    }
 
-<form asp-action="DeletarProduto">
-    <input type="hidden" asp-for="IdProduto" />
-    <button type="submit">Sim, excluir</button>
-    <a asp-action="ListarProdutos">Cancelar</a>
-</form>
+    h2 {
+        color: #00ffff;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+
+    strong {
+        color: #00ffff;
+    }
+
+    button {
+        background-color: #ff004c;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        width: 100%;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+        button:hover {
+            background-color: #cc003d;
+            transform: scale(1.05);
+        }
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00ffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        a:hover {
+            color: #80ffff;
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h2>Excluir Produto</h2>
+
+    <p>Tem certeza que deseja excluir <strong>@Model.Nome</strong>?</p>
+
+    <form asp-action="DeletarProduto" method="post">
+        <input type="hidden" asp-for="IdProduto" />
+        <button type="submit">Sim, excluir</button>
+    </form>
+
+    <a asp-action="ListarProdutos">← Cancelar</a>
+</div>

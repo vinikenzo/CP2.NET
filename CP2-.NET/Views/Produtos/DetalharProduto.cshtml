@@ -4,12 +4,20 @@
     var funcionario = funcionarios?.FirstOrDefault(f => f.IdFuncionario == Model.IdFuncionario);
 }
 
-<h2>Detalhes do Produto</h2>
+<div class="container mt-4">
+    <div class="card p-4 bg-dark text-light shadow-lg" style="border-radius: 20px; box-shadow: 0 0 10px #00ffff;">
+        <h2 class="text-center mb-4" style="color: #00ffff;">Detalhes do Produto</h2>
 
-<p><strong>Nome:</strong> @Model.Nome</p>
-<p><strong>Categoria:</strong> @Model.Categoria</p>
-<p><strong>Quantidade:</strong> @Model.Quantidade</p>
-<p><strong>Data de Cadastro:</strong> @Model.DataCadastro.ToShortDateString()</p>
-<p><strong>Responsável:</strong> @funcionario?.Nome</p>
+        <p><strong>Nome:</strong> @Model.Nome</p>
+        <p><strong>Categoria:</strong> @Model.Categoria</p>
+        <p><strong>Quantidade:</strong> @Model.Quantidade</p>
+        <p><strong>Data de Cadastro:</strong> @Model.DataCadastro.ToShortDateString()</p>
+        <p><strong>Responsável:</strong> @funcionario?.Nome</p>
 
-<a asp-action="ListarProdutos">Voltar</a>
+        <div class="text-center mt-4">
+            <a asp-action="ListarProdutos" class="btn btn-info" style="border-radius: 25px; background-color: #00ffff; color: #000; font-weight: bold; border: none;">
+                Voltar
+            </a>
+        </div>
+    </div>
+</div>

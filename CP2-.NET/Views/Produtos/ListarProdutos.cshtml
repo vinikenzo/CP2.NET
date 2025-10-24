@@ -1,45 +1,154 @@
 ﻿@model List<CP2_.NET.Models.Produto>
 
 @{
+    ViewData["Title"] = "Lista de Produtos";
     var funcionarios = ViewBag.Funcionarios as List<CP2_.NET.Models.Funcionario>;
 }
 
-<h2>Estoque - Lista de Produtos</h2>
-
-<form method="get">
-    <input type="text" name="busca" placeholder="Pesquisar produto..." />
-    <button type="submit">Buscar</button>
-</form>
-
-<p><a asp-action="CadastrarProduto">Cadastrar Novo Produto</a></p>
-
-<table border="1" cellpadding="5" >
-    <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Categoria</th>
-        <th>Quantidade</th>
-        <th>Preço (R$)</th>
-        <th>Responsável</th>
-        <th>Data de Cadastro</th>
-        <th>Ações</th>
-    </tr>
-
-    @foreach (var produto in Model)
-    {
-        <tr>
-            <td>@produto.IdProduto</td>
-            <td>@produto.Nome</td>
-            <td>@produto.Categoria</td>
-            <td>@produto.Quantidade</td>
-            <td>@produto.Preco.ToString("F2")</td>
-            <td>@funcionarios.FirstOrDefault(f => f.IdFuncionario == produto.IdFuncionario)?.Nome</td>
-            <td>@produto.DataCadastro.ToString("dd/MM/yyyy")</td>
-            <td>
-                <a asp-action="DetalharProduto" asp-route-id="@produto.IdProduto">Ver</a> |
-                <a asp-action="EditarProduto" asp-route-id="@produto.IdProduto">Editar</a> |
-                <a asp-action="DeletarProduto" asp-route-id="@produto.IdProduto">Excluir</a>
-            </td>
-        </tr>
+<style>
+    .container {
+        background-color: #0a0a1a;
+        border-radius: 20px;
+        padding: 25px 30px;
+        box-shadow: 0 0 20px #00ffff22;
     }
-</table>
+
+    h2 {
+        color: #00ffff;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 0 0 10px #00ffffaa;
+    }
+
+    form input[type="text"] {
+        border-radius: 25px;
+        border: 1px solid #00ffff;
+        background-color: #111;
+        color: #e0e0e0;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+
+        form input[type="text"]:focus {
+            box-shadow: 0 0 10px #00ffff;
+            border-color: #00cccc;
+        }
+
+    form button {
+        border-radius: 25px;
+        padding: 10px 25px;
+        background-color: #00ffff;
+        color: #000;
+        font-weight: bold;
+        transition: 0.3s;
+        border: none;
+        margin-left: 15px;
+    }
+
+        form button:hover {
+            background-color: #00cccc;
+            transform: scale(1.05);
+        }
+
+    .btn-success {
+        border-radius: 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .btn-success:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #00ffb3aa;
+        }
+
+
+    table {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 15px #00ffff22;
+    }
+
+    thead {
+        border-radius: 15px 15px 0 0;
+    }
+
+    th {
+        color: #000;
+        font-weight: 700;
+    }
+
+    td, th {
+        vertical-align: middle !important;
+    }
+
+    .btn {
+        border-radius: 20px;
+        padding: 6px 12px;
+        transition: 0.3s;
+    }
+
+        .btn:hover {
+            transform: scale(1.08);
+        }
+
+    .btn-info:hover {
+        box-shadow: 0 0 10px #00ffffaa;
+    }
+
+    .btn-warning:hover {
+        box-shadow: 0 0 10px #ffcc00aa;
+    }
+
+    .btn-danger:hover {
+        box-shadow: 0 0 10px #ff0044aa;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Estoque - Lista de Produtos</h2>
+
+    <form method="get" class="d-flex mb-3">
+        <input type="text" name="busca" placeholder="Pesquisar produto..." />
+        <button type="submit">Buscar</button>
+    </form>
+
+    <p>
+        <a asp-action="CadastrarProduto" class="btn btn-dark">Cadastrar Novo Produto</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-dark table-striped table-bordered align-middle text-center">
+            <thead class="table-info">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Preço (R$)</th>
+                    <th>Responsável</th>
+                    <th>Data de Cadastro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var produto in Model)
+                {
+                    <tr>
+                        <td>@produto.IdProduto</td>
+                        <td>@produto.Nome</td>
+                        <td>@produto.Categoria</td>
+                        <td>@produto.Quantidade</td>
+                        <td>@produto.Preco.ToString("F2")</td>
+                        <td>@funcionarios.FirstOrDefault(f => f.IdFuncionario == produto.IdFuncionario)?.Nome</td>
+                        <td>@produto.DataCadastro.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <a asp-action="DetalharProduto" asp-route-id="@produto.IdProduto" class="btn btn-info btn-sm">Ver</a>
+                            <a asp-action="EditarProduto" asp-route-id="@produto.IdProduto" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-action="DeletarProduto" asp-route-id="@produto.IdProduto" class="btn btn-danger btn-sm">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
